@@ -1,1 +1,1 @@
-module.exports=(...a)=>a.slice(1).reduce((l,c)=>[...new Set(l.filter(t=>c.includes(t)))],(s=>[...s].flatMap((_,i)=>[...s].flatMap((_,j)=>j>=i?[s.slice(i,j+1)]:[])))(a[0])).sort((a,b)=>b.length-a.length)[0]||''
+for(a=process.argv.slice(2),l='',s=a[0]||'',i=0;s[i];i++)for(j=i;++j<=s.length;)a.every(x=>x.includes(t=s.slice(i,j)))&j>i+l.length?l=t:0;console.log(l)
